@@ -18,6 +18,17 @@ class Solution {
             else
                 result += map.get(s.charAt(i));
         }
+        /*
+        //between s[i] & s[i+1]
+         for(int i=0;i<s.length();i++){
+             
+            if(i+1<s.length() && map.get(s.charAt(i))<map.get(s.charAt(i+1)))  
+                result -= map.get(s.charAt(i)); 
+              
+            else
+                result += map.get(s.charAt(i));
+        }
+        */
         return result;
     }
 }
